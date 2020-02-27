@@ -24,9 +24,6 @@ export class Detail extends Component {
 
       <div>
         <p>
-          <strong>hola</strong> desde product info
-        </p>
-        <p>
           <strong>Id</strong>: {this.state.product.id}
         </p>
         <p>

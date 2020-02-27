@@ -4,22 +4,7 @@ import { Detail } from './Detail'
 
 export class Home extends Component {
 
-  state = {
-      id: 0,
-      name: '',
-      manufacturer: '',
-      description: '',
-      color: '',
-      price: 0,
-      imageFileName: '',
-      screen: '',
-      processor: '',
-      ram: 0,
-      url: ''
-  }
-  
   render () {    
-
 
     const url = new URL(document.location)
     const Page = url.searchParams.has('id')
@@ -28,7 +13,6 @@ export class Home extends Component {
 
     return (
       <div>
-        <h5>home</h5>
         <p>header (solo render)</p>
           {Page}
         <p>footer solo render</p>
