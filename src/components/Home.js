@@ -17,9 +17,6 @@ export class Home extends Component {
       ram: 0,
       url: ''
   }
-  // _getProductInfo (e) {
-  //   console.log('done')
-  // }
   
   render () {    
 
