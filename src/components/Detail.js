@@ -9,8 +9,6 @@ export class Detail extends Component {
   componentDidMount () {
     axios('http://localhost:8080/phones')
       .then( results => {
-        console.log(results.data);
-
         const url = new URL(document.location)
         const urlId = url.searchParams.get('id')
         const product = results.data.find( product => product.name.replace(/ /g, "") === urlId )

@@ -8,7 +8,6 @@ export class ProductsList extends Component {
   componentDidMount () {
     axios('http://localhost:8080/phones')
       .then( results => {
-        console.log(results.data);
         this.setState({ productsList: results.data })
       })
       .catch( e => console.log('Request error', e))
