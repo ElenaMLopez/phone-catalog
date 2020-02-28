@@ -78,7 +78,24 @@ p {
   width: 25%;
 }
 
-
+/* Detail */
+.detail-info--container {
+  background: var(--soft-grey);
+  border-radius: 10px;
+  margin: 20px auto;
+  width: 80%;
+}
+.detail-info--list-item {
+  text-align: left;
+  padding: 12px;
+}
+.detail-info--item {
+  color: var(--text-brand-dark-color);
+  list-style: none;
+}
+.detail-info--image {
+  width: 40%;
+}
 /*  animations  */
 
 /*Animate.css: https://daneden.github.io/animate.css/ */

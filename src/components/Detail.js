@@ -22,37 +22,23 @@ export class Detail extends Component {
 
     return (
 
-      <div>
-        <p>
-          <strong>Id</strong>: {this.state.product.id}
-        </p>
-        <p>
-          <strong>Name</strong>: {this.state.product.name}
-        </p>
-        <p>
-          <strong>manufacturer</strong>: {this.state.product.manufacturer}
-        </p>
-        <p>
-          <strong>description</strong>: {this.state.product.description}
-        </p>
-        <p>
-          <strong>color</strong>: {this.state.product.color}
-        </p>
-        <p>
-          <strong>price</strong>: {this.state.product.price}
-        </p>
-        <p>
-          <strong>imageFileName</strong>: {this.state.product.imageFileName}
-        </p>
-        <p>
-          <strong>screen</strong>: {this.state.product.screen}
-        </p>
-        <p>
-          <strong>processor</strong>: {this.state.product.processor}
-        </p>
-        <p>
-          <strong>ram</strong>: {this.state.product.ram}
-        </p>
+      <div className='detail-info--container'>
+        <ul className='detail-info--list-item'>
+          <li className='detail-info--item'>
+            <img 
+            className='detail-info--image'
+            src={`../../images/${this.state.product.imageFileName}`} 
+            alt={this.state.product.name} />
+            </li>
+          <li className='detail-info--item'><strong>Name</strong>: {this.state.product.name}</li>
+          <li className='detail-info--item'><strong>Made by:</strong>: {this.state.product.manufacturer}</li>
+          <li className='detail-info--item'><strong>Description</strong>: {this.state.product.description}</li>
+          <li className='detail-info--item'><strong>Color</strong>: {this.state.product.color}</li>
+          <li className='detail-info--item'><strong>Price</strong>: {this.state.product.price}</li>
+          <li className='detail-info--item'><strong>Screen Size</strong>: {this.state.product.screen}</li>
+          <li className='detail-info--item'><strong>Processor</strong>: {this.state.product.processor}</li>
+          <li className='detail-info--item'><strong>RAM</strong>: {this.state.product.ram} Gb</li>
+        </ul>
     </div>
     )  
   }
