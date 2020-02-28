@@ -54,8 +54,8 @@ export class ProductsList extends Component {
 
   render () {
     return (
-      <div>
-        <ul>
+      <div className='produc-list--container'>
+        <ul className='produc-list--list-container'>
           {this._renderProducts()}
         </ul>
       </div>

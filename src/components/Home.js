@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { ProductsList } from './Products-list'
 import { Detail } from './Detail'
+import { Header } from './Header';
 
 export class Home extends Component {
 
@@ -13,9 +14,13 @@ export class Home extends Component {
 
     return (
       <div>
-        <p>header (solo render)</p>
-          {Page}
-        <p>footer solo render</p>
+        <div className='first-container'>
+          <Header className='header-container'/>
+        </div>
+        <div className='second-container'>
+            {Page}
+          <p>footer solo render</p>
+        </div>
       </div>
     )
   }
