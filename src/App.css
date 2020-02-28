@@ -49,14 +49,7 @@ p {
   top: 110px;
   width: 100%;
 }
-/* product-list */
-/* @media (min-width: 635px) {
-  .produc-list--container {
-    display: grid;
-    grid-template-columns: minmax(240px, 1fr);      
-      
-    }
-} */
+
 @media (min-width: 768px) {
   .produc-list--list-container {
     display: grid;
@@ -149,17 +142,21 @@ p {
 /*  Header  */
 
 .header-container {
-  /* background-image: url('./custom-images/COUPLE.jpg');
-  background-position-y: -154px;
-  background-repeat: no-repeat;
-  background-size: 100%; */
+  background-color: transparent;
   height: 280px;
   padding: 24px;
   text-align: left;
-  background-color: transparent;
 }
 .header-title {
   color: var(--text-brand-color);
+}
+
+/* Footer */
+.footer-container {
+  background: var(--background-brand-dark-color);
+  color: var(--text-brand-color);
+  margin: 24px auto 0;
+  padding-bottom: 12px;
 }
 /*  animations  */
 

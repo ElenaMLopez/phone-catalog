@@ -19,7 +19,7 @@ export class Home extends Component {
         </div>
         <div className='second-container'>
             {Page}
-          <p>footer solo render</p>
+        <footer className='footer-container'> Acme phone inc | @2020 working in </footer>
         </div>
       </div>
     )
