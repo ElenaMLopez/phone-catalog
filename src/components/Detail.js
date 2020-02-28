@@ -18,10 +18,8 @@ export class Detail extends Component {
      
   }
   render () {
-    
 
     return (
-
       <div className='detail-info--container'>
         <ul className='detail-info--list-item'>
           <li className='detail-info--item'>
