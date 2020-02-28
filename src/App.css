@@ -1,24 +1,97 @@
+#root {
+  /* text  */
+  --text-color: #444;
+  --text-error-color: #red;
+  --text-brand-color: #00ded8;
+  --text-brand-dark-color: #004d4a;
+  --title-light-color: #888;
+  --default-border-color: #c7c7c7;
+  
+  /* colors */
+  --black: #000;
+  --white: #fff;
+  --soft-grey: #fdfdfd;
+  --dark-grey: #111;
+  --background-brand-dark-color: #001d1c;
+}
+/* Basic Reset */
+* {
+  box-sizing: border-box;
+}
+
+p {
+  margin: 5px;
+}
+
 .App {
   text-align: center;
+  background: var(--background-brand-dark-color)
 }
 
 /* product-list */
+.product-list--link {
+  display: block;
+  color: inherit;
+  margin-top: 24px;
+  text-decoration: none;
+  width: 80%;
+}
 
 .product-list--item{
-  border: 1px solid #999;
+  background: var(--black);
+  border: 1px solid var(--default-border-color);
+  border-radius: 10px;
   list-style: none;  
-  padding: 0;
-  width: 80%;
+  margin: 10px 0;
+  max-height: 240px;
+  overflow: hidden;
+  padding: 24px; 
+}
 
+.product-list--item-head {
+  background-color: var(--black);
+  display: flex;
+  justify-content: space-between;
+  max-height: 80px;
+}
+.product-list--item-title {
+  color: var(--text-brand-color);
+}
+.product-list-item--info-display {
+  background: var(--soft-grey);
+  border-radius: 10px;
+  color: var(--text-brand-dark-color);
+  height: 150px;
+  text-align: left;
+  margin-top: 66px;
+  padding: 12px;
+}
+
+.product-list-item--info-display:hover {
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-name: fadeInUp;
+  animation-timing-function: ease;  
 }
 
 .product-list--image {
-
   width: 25%;
 }
 
 
+/*  animations  */
 
-.App-link {
-  color: #61dafb;
+/*Animate.css: https://daneden.github.io/animate.css/ */
+@keyframes fadeInUp {
+  from {
+    margin-top: 66px ;
+  }
+
+  to {
+    margin-top: 12px
+  }
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
 }
